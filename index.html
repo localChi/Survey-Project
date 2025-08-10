@@ -1,0 +1,52 @@
+<DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset Utf-8>
+         <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Get to know you survey </title>
+         <link rel="stylesheet" href="styles.css">
+</head>
+        <body>
+                <h1 id="title">Get to know you survey </h1>
+                <p id="description">This survey should allow me to get to know you better, there will be a series of questions that you should follow up with answers to</p>
+                <form action="submit.php" method="post" id="survey-form">
+                    <label id="name-label" for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+                    <label for="email" id="email-label">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="JohnDoe127@gmail.com">
+
+                    <label for="number" id="number-label">Age:</label>
+                    <input type="number" id="number" name="age" min="1" max="100" required placeholder="27">
+
+                        <p>How did you find out about this survey?</p>
+                        <select id="dropdown">
+                         <option value="" disabled selected>Select your option</option>
+                              <option value="Reccomended">Reccomended</option>
+                                <option value="Searched-for">Searched for</option>
+                                  <option value="None">None of the above</option>
+   </select>
+
+    <h4>Favourite cuisine</h4>
+<label for="local">Local<input type="radio" id="local" checked name="cuisine" value="Local"></label>
+<label for="foreign">Foreign<input type="radio" id="foreign"name="cuisine" value="Foreign"></label>
+
+    <h4 id="race">Ethnicity</h4>
+<label for="african">African-American(or of African descent)<input type="checkbox" id="african" value="african"</label>
+<label for="latin">Latin American<input type="checkbox" id="latin"value="latin"></label>
+<label for="middle-eastern">Middle Eastern<input type="checkbox" id="middle-eastern"value="middle-eastern"></label>
+<label for="caucasian">White(caucasian or of European descent)<input type="checkbox" id="caucasian"value="caucasian"></label>
+<label for="asian">Asian<input type="checkbox" id="asian"value="asian"></label>
+<label for="native">Native-american(or of Native descent)<input type="checkbox" id="native"value="native"></label>
+
+                    <label for="feedback">Did you enjoy the survey?</label>
+                    <textarea id="feedback" name="feedback" required></textarea>
+
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+               
+        <footer>
+            <h3>Contact me</h3>
+<a href="mailto:owensjaydon125@gmail.com"subject="subject text">owensjaydon125@gmail.com</a>
+                </footer>
+    </html>
